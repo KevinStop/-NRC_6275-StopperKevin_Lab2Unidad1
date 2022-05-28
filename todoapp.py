@@ -1,6 +1,4 @@
 #import libreria Flask
-import email
-from turtle import title
 from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
@@ -13,6 +11,8 @@ def helloworld():
 def enviar():
     title = request.form['title']
     return "<td>"+ title +"</td>"
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
