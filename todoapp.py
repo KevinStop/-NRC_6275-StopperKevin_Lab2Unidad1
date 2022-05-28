@@ -14,7 +14,5 @@ def enviar():
     title = request.form['title']
     return "<td>"+ title +"</td>"
 
-
-
 if __name__ == "__main__":
     app.run(debug=True)
